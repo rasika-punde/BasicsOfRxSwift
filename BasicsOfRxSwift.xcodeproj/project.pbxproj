@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		3FBB6083A80DB61A33B18493 /* Pods_BasicsOfRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C741D754F6417A9ABECE0DA /* Pods_BasicsOfRxSwift.framework */; };
 		F081FF3B23EEB68B00B362C0 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081FF3A23EEB68B00B362C0 /* LogInViewModel.swift */; };
-		F081FF3D23EEBC0600B362C0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081FF3C23EEBC0600B362C0 /* WelcomeViewController.swift */; };
-		F081FF3F23EEBC1700B362C0 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081FF3E23EEBC1700B362C0 /* WelcomeViewModel.swift */; };
 		F08B63B723ED95E900EC93C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B63B623ED95E900EC93C1 /* AppDelegate.swift */; };
 		F08B63B923ED95E900EC93C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B63B823ED95E900EC93C1 /* SceneDelegate.swift */; };
 		F08B63BB23ED95E900EC93C1 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08B63BA23ED95E900EC93C1 /* LogInViewController.swift */; };
@@ -24,8 +22,6 @@
 		2FC7809FE2D2565ACE54222E /* Pods-BasicsOfRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicsOfRxSwift.release.xcconfig"; path = "Target Support Files/Pods-BasicsOfRxSwift/Pods-BasicsOfRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		CF675307DD6027A2DFBCFFCA /* Pods-BasicsOfRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicsOfRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-BasicsOfRxSwift/Pods-BasicsOfRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		F081FF3A23EEB68B00B362C0 /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
-		F081FF3C23EEBC0600B362C0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		F081FF3E23EEBC1700B362C0 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		F08B63B323ED95E900EC93C1 /* BasicsOfRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicsOfRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08B63B623ED95E900EC93C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F08B63B823ED95E900EC93C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				F08B63BA23ED95E900EC93C1 /* LogInViewController.swift */,
-				F081FF3C23EEBC0600B362C0 /* WelcomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -78,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				F081FF3A23EEB68B00B362C0 /* LogInViewModel.swift */,
-				F081FF3E23EEBC1700B362C0 /* WelcomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -241,8 +235,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F081FF3B23EEB68B00B362C0 /* LogInViewModel.swift in Sources */,
-				F081FF3F23EEBC1700B362C0 /* WelcomeViewModel.swift in Sources */,
-				F081FF3D23EEBC0600B362C0 /* WelcomeViewController.swift in Sources */,
 				F08B63BB23ED95E900EC93C1 /* LogInViewController.swift in Sources */,
 				F08B63B723ED95E900EC93C1 /* AppDelegate.swift in Sources */,
 				F08B63B923ED95E900EC93C1 /* SceneDelegate.swift in Sources */,

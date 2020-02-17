@@ -110,6 +110,7 @@ class LogInViewController: UIViewController {
 //signInButton.rx.tap.bind {
 //    self.viewModel.authenticateUser()
 //}.disposed(by: disposeBag)
+
 //viewModel.isLoading.map{!$0}.bind(to: self.signInButton.rx.isUserInteractionEnabled).disposed(by: disposeBag)
 
 //viewModel.showAlert.subscribe(onNext: { (username, completion) in
