@@ -49,6 +49,12 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="6KS-OA-wm3">
                                 <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShR-D6-C42">
+                                <rect key="frame" x="0.0" y="498" width="414" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.87058823529411766" green="0.59607843137254901" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -56,6 +62,7 @@
                             <constraint firstItem="7Ma-LX-0d0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="14F-Pw-Vkl"/>
                             <constraint firstItem="q5r-ws-kuh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="35B-LD-oMf"/>
                             <constraint firstItem="jch-47-63F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="BcL-br-uI4"/>
+                            <constraint firstItem="ShR-D6-C42" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="C5R-0g-M9d"/>
                             <constraint firstItem="Ryr-HN-7SD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Leh-vz-Vvp"/>
                             <constraint firstItem="6KS-OA-wm3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U5O-Wd-VvW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ryr-HN-7SD" secondAttribute="trailing" constant="40" id="XPh-po-tep"/>
@@ -63,8 +70,10 @@
                             <constraint firstItem="6KS-OA-wm3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dR2-1k-WjQ"/>
                             <constraint firstItem="jch-47-63F" firstAttribute="top" secondItem="Ryr-HN-7SD" secondAttribute="bottom" constant="20" id="gPI-ty-lV7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Ma-LX-0d0" secondAttribute="trailing" id="jqe-w0-9vv"/>
+                            <constraint firstItem="ShR-D6-C42" firstAttribute="top" secondItem="q5r-ws-kuh" secondAttribute="bottom" constant="25" id="jzD-HJ-419"/>
                             <constraint firstItem="Ryr-HN-7SD" firstAttribute="top" secondItem="7Ma-LX-0d0" secondAttribute="bottom" constant="80" id="wG7-5F-Qya"/>
                             <constraint firstItem="q5r-ws-kuh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wtC-XS-RJ2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ShR-D6-C42" secondAttribute="trailing" id="xAy-ez-lEe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -72,39 +81,13 @@
                         <outlet property="loadingIndicator" destination="6KS-OA-wm3" id="zpd-P2-kLx"/>
                         <outlet property="passwordTextField" destination="jch-47-63F" id="owo-Qn-NQ4"/>
                         <outlet property="signInButton" destination="q5r-ws-kuh" id="npm-It-zru"/>
+                        <outlet property="signInStatusLabel" destination="ShR-D6-C42" id="rti-ou-gQG"/>
                         <outlet property="usernameTextField" destination="Ryr-HN-7SD" id="rwz-ia-tJ8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-204.34782608695653" y="132.58928571428572"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="kc3-fi-NUz">
-            <objects>
-                <viewController id="tYL-k3-MWh" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KoY-Fk-hQg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQI-bt-Cwg">
-                                <rect key="frame" x="107.5" y="418" width="199.5" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="aQI-bt-Cwg" firstAttribute="centerX" secondItem="KoY-Fk-hQg" secondAttribute="centerX" id="MUy-Lm-4Yn"/>
-                            <constraint firstItem="aQI-bt-Cwg" firstAttribute="centerY" secondItem="KoY-Fk-hQg" secondAttribute="centerY" id="tsF-I1-HFH"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="5zp-8G-HG2"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xe1-AF-tnb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="510" y="133"/>
         </scene>
     </scenes>
 </document>

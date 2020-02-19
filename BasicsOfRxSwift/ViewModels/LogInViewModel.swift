@@ -10,19 +10,14 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+enum ErrorType: Error {
+    case wrongPassword
+}
+
 class LogInViewModel {
-    lazy var isLoading = BehaviorSubject<Bool>(value: false)
-    var username = BehaviorRelay<String>(value: "")
-    var password = BehaviorRelay<String>(value: "")
     
+    func authenticateUser(username: String?, password: String?) {
     
-    
-    func authenticateUser() {
-        isLoading.onNext(true)
-        Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { (_) in
-            self.isLoading.onNext(false)
-            
-        }
     }
 }
 
@@ -93,8 +88,26 @@ class LogInViewModel {
 
 
 
-//var showAlert = PublishSubject<(username: String, completion:() -> Void)>()
 
-//self.showAlert.onNext((self.username.value, {
-//    print("Yeayyyyyy!!!!!")
-//}))
+
+
+
+//lazy var isLoading = BehaviorSubject<Bool>(value: false)
+//var username = BehaviorRelay<String>(value: "")
+//var password = BehaviorRelay<String>(value: "")
+//
+//var signInStatus = PublishSubject<String>()
+
+
+//isLoading.onNext(true)
+//Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { (_) in
+//    self.isLoading.onNext(false)
+//
+//    let password = self.password.value
+//
+//    if password == "123" {
+//        self.signInStatus.onError(ErrorType.wrongPassword)
+//    } else {
+//        self.signInStatus.onNext("Success!!")
+//    }
+//}
